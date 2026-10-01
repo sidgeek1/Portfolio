@@ -1,0 +1,212 @@
+{
+  "project_info": {
+    "name": "Abhishek Siddant Jonnalagadda - 3D Interactive Portfolio",
+    "role": "Data & Strategy Analyst (4+ Years Experience)",
+    "email": "abhisheksiddantj@gmail.com",
+    "linkedin": "https://in.linkedin.com/in/abhishek-siddant-jonnalagadda",
+    "app_type": "3D Interactive Creative Portfolio Landing Page",
+    "theme": "Dark / Cybernetic Tactical Minimalism"
+  },
+  "typography": {
+    "font_family_heading": "Cabinet Grotesk, Syne, sans-serif",
+    "font_family_body": "Plus Jakarta Sans, Inter, sans-serif",
+    "font_family_mono": "JetBrains Mono, Fira Code, monospace",
+    "hierarchy": {
+      "h1_hero": "text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight",
+      "h2_section": "text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-slate-100",
+      "h3_card": "text-xl sm:text-2xl font-semibold tracking-tight text-white",
+      "subtitle": "text-lg sm:text-xl text-slate-400 font-normal leading-relaxed",
+      "body": "text-base text-slate-300 leading-relaxed",
+      "caption": "text-xs uppercase tracking-[0.2em] font-mono text-cyan-400 font-medium"
+    }
+  },
+  "colors": {
+    "bg_primary": "#07090E",
+    "bg_secondary": "#0B0F17",
+    "bg_card": "rgba(15, 23, 42, 0.65)",
+    "bg_card_hover": "rgba(30, 41, 59, 0.8)",
+    "border_subtle": "rgba(255, 255, 255, 0.08)",
+    "border_active": "rgba(6, 182, 212, 0.4)",
+    "text_main": "#F8FAFC",
+    "text_muted": "#94A3B8",
+    "accent_cyan": "#06B6D4",
+    "accent_emerald": "#10B981",
+    "accent_violet": "#8B5CF6",
+    "accent_glow": "rgba(6, 182, 212, 0.15)",
+    "gradient_hero": "linear-gradient(135deg, #06B6D4 0%, #3B82F6 50%, #8B5CF6 100%)",
+    "gradient_emerald": "linear-gradient(135deg, #10B981 0%, #06B6D4 100%)"
+  },
+  "visual_enhancers": {
+    "glassmorphism": "backdrop-blur-xl bg-slate-950/70 border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.4)]",
+    "tracing_border": "relative before:absolute before:inset-0 before:p-[1px] before:bg-gradient-to-r before:from-cyan-500/40 before:via-emerald-500/20 before:to-transparent before:rounded-2xl before:-z-10",
+    "grid_background": "bg-[linear-gradient(to_right,#1f293715_1px,transparent_1px),linear-gradient(to_bottom,#1f293715_1px,transparent_1px)] bg-[size:4rem_4rem]",
+    "glow_shadow": "shadow-[0_0_25px_rgba(6,182,212,0.15)] hover:shadow-[0_0_35px_rgba(6,182,212,0.3)] transition-shadow duration-300"
+  },
+  "layout_and_grids": {
+    "bento_skills": {
+      "mode": "TETRIS GRID",
+      "container": "grid grid-cols-1 md:grid-cols-8 lg:grid-cols-12 gap-6",
+      "items": {
+        "hero_skill": "col-span-full md:col-span-8 lg:col-span-8 p-8 bg-slate-900/60 border border-white/10 rounded-2xl relative overflow-hidden",
+        "tall_skill": "col-span-full md:col-span-4 lg:col-span-4 p-6 bg-slate-900/60 border border-white/10 rounded-2xl",
+        "square_skill": "col-span-full md:col-span-4 lg:col-span-6 p-6 bg-slate-900/60 border border-white/10 rounded-2xl",
+        "wide_skill": "col-span-full lg:col-span-6 p-6 bg-slate-900/60 border border-white/10 rounded-2xl"
+      }
+    },
+    "case_studies_grid": "grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10",
+    "experience_timeline": "space-y-8 relative before:absolute before:inset-0 before:left-4 md:before:left-1/2 before:w-0.5 before:bg-gradient-to-b before:from-cyan-500 before:via-emerald-500/50 before:to-slate-800"
+  },
+  "3d_components_and_interactivity": {
+    "hero_3d_scene": {
+      "type": "Interactive Floating Data Mesh & Orbiting Nodes",
+      "implementation": "Three.js / Canvas direct integration or React Three Fiber",
+      "features": "Floating wireframe geometric data blocks, particle constellation, mouse cursor tracking parallax effect, subtle rotation physics"
+    },
+    "3d_data_visualization": {
+      "type": "Rotatable & Zoomable 3D Data Bars / Node Cluster Studio",
+      "implementation": "Three.js interactive Canvas component with Orbit Controls",
+      "dataset_switcher": ["Revenue Growth Yield", "SaaS User Cohort Churn", "Supply Chain Efficiency"],
+      "controls": "Rotate, Zoom, Filter Datasets, Click node/bar for metric tooltip"
+    }
+  },
+  "sections": {
+    "navigation": {
+      "style": "Fixed floating glassmorphic bar at top with z-50",
+      "elements": [
+        "Brand Logo (ASJ custom SVG monogram with cyan pulse)",
+        "Nav Links: About, Skills, 3D Viz, Projects, Experience",
+        "Primary CTA: 'Get in Touch' smooth-scroll button to contact section"
+      ]
+    },
+    "hero": {
+      "title": "Abhishek Siddant",
+      "subtitle": "Data & Strategy Analyst • 4+ Years Experience",
+      "tagline": "Translating Complex High-Dimensional Data into High-Impact Executive Strategy & Predictive Models.",
+      "features": [
+        "3D Floating Data Canvas with mouse interaction",
+        "Line-by-line staggered text entrance animation via Framer Motion",
+        "Key Metrics Counter Grid (4+ Yrs Exp, $12M+ Business Value Created, 98.4% Analytical Precision, 20+ Enterprise Projects)",
+        "Action Buttons: 'Explore 3D Data Viz' & 'View Case Studies'"
+      ]
+    },
+    "editorial_marquee": {
+      "style": "Slow organic drift ticker banner with glowing text dividers",
+      "items": [
+        "SQL & BIGQUERY",
+        "PYTHON & PANDAS",
+        "TABLEAU & POWER BI",
+        "STRATEGIC FORECASTING",
+        "MACHINE LEARNING",
+        "COHORT ANALYSIS",
+        "A/B TESTING & EXPERIMENTATION",
+        "FINANCIAL MODELING"
+      ]
+    },
+    "about": {
+      "title": "Strategic Blueprint & Philosophy",
+      "content": "4 years of bridging the gap between raw data pipelines and C-suite decisions. Specializing in predictive analytics, churn reduction, unit economics, and scalable data architecture.",
+      "pillars": [
+        "Data-First Decision Making",
+        "Predictive Strategy over Reactive Metrics",
+        "Clear Visual Storytelling for Executives"
+      ]
+    },
+    "skills": {
+      "title": "Technical Expertise & Toolkit",
+      "bento_items": [
+        {
+          "category": "Data Engineering & Querying",
+          "skills": ["Advanced SQL", "PostgreSQL", "Snowflake", "BigQuery", "ETL Pipelines", "dbt"],
+          "highlight": "Processed 100M+ row datasets with optimized query latency."
+        },
+        {
+          "category": "Statistical & Machine Learning",
+          "skills": ["Python (Pandas, NumPy, Scikit-Learn)", "Regressions", "Clustering", "Time Series Forecasting"],
+          "highlight": "Built predictive models with 95%+ classification accuracy."
+        },
+        {
+          "category": "BI & Data Storytelling",
+          "skills": ["Tableau", "PowerBI", "Looker", "Interactive Dashboards", "Executive Reporting"],
+          "highlight": "Designed C-suite executive dashboards adopted by 50+ decision makers."
+        },
+        {
+          "category": "Business & Strategy Frameworks",
+          "skills": ["Cohort Analysis", "LTV/CAC Modeling", "Market Basket Analysis", "A/B Testing", "Financial Modeling"],
+          "highlight": "Identified $2.4M growth bottleneck in SaaS expansion funnel."
+        }
+      ]
+    },
+    "data_viz_3d_studio": {
+      "title": "Interactive 3D Data Viz Studio",
+      "description": "Rotate, inspect, and toggle datasets in real-time within this custom-built 3D spatial analytics environment.",
+      "interactive_modes": ["3D Revenue Yield Bars", "Customer Journey Node Network", "Regional Growth Topography"]
+    },
+    "projects": {
+      "title": "Selected Case Studies & High-Impact Projects",
+      "items": [
+        {
+          "title": "Enterprise SaaS Churn & Retention Engine",
+          "impact": "$1.8M ARR Saved",
+          "metric": "18.4% Reduction in Customer Churn",
+          "description": "Developed a XGBoost predictive churn model analyzing user engagement telemetry across 40,000 active enterprise seats.",
+          "tech": ["Python", "SQL", "Scikit-Learn", "Tableau"],
+          "image": "https://images.unsplash.com/photo-1786785712280-f43ac067726d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDN8MHwxfHNlYXJjaHw0fHxkYXRhJTIwYW5hbHl0aWNzJTIwdmlzdWFsaXphdGlvbiUyMGRhcmslMjBhYnN0cmFjdCUyMHRlY2h8ZW58MHx8fHwxNzkwODI4Mjk1fDA&ixlib=rb-4.1.0&q=85"
+        },
+        {
+          "title": "E-Commerce Multi-Touch Attribution Model",
+          "impact": "+32% Marketing ROI Efficiency",
+          "metric": "$4.2M Ad Spend Optimized",
+          "description": "Architected Markov-chain attribution pipeline to replace flawed last-click attribution across paid media channels.",
+          "tech": ["BigQuery", "Python", "Looker", "Statistical Modeling"],
+          "image": "https://images.unsplash.com/photo-1786785712112-84a1c0ce24b2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDN8MHwxfHNlYXJjaHwyfHxkYXRhJTIwYW5hbHl0aWNzJTIwdmlzdWFsaXphdGlvbiUyMGRhcmslMjBhYnN0cmFjdCUyMHRlY2h8ZW58MHx8fHwxNzkwODI4Mjk1fDA&ixlib=rb-4.1.0&q=85"
+        },
+        {
+          "title": "Fintech Revenue Yield & Unit Economics Simulator",
+          "impact": "Deployed to Executive Board",
+          "metric": "100% Scenario Precision",
+          "description": "Built dynamic Monte-Carlo financial forecasting tool allowing leadership to stress-test interest rate fluctuations and default risks.",
+          "tech": ["Python", "Financial Modeling", "Streamlit", "PowerBI"],
+          "image": "https://images.unsplash.com/photo-1786785712665-bb11ca2f0117?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDN8MHwxfHNlYXJjaHwxfHxkYXRhJTIwYW5hbHl0aWNzJTIwdmlzdWFsaXphdGlvbiUyMGRhcmslMjBhYnN0cmFjdCUyMHRlY2h8ZW58MHx8fHwxNzkwODI4Mjk1fDA&ixlib=rb-4.1.0&q=85"
+        }
+      ]
+    },
+    "experience": {
+      "title": "Professional Progression",
+      "timeline": [
+        {
+          "role": "Senior Data & Strategy Analyst",
+          "company": "Enterprise Tech Solutions",
+          "period": "2023 - Present (2 Years)",
+          "highlights": [
+            "Led cross-functional strategy initiatives analyzing $50M+ annual transaction volume.",
+            "Mentored junior analysts and established standard operating procedures for BigQuery data models."
+          ]
+        },
+        {
+          "role": "Data Analyst / Growth Strategist",
+          "company": "Nexus Analytics & Insights",
+          "period": "2021 - 2023 (2 Years)",
+          "highlights": [
+            "Constructed automated ETL pipelines feeding real-time executive Tableau dashboards.",
+            "Executed 25+ A/B experiments driving 14% uplift in signup conversion rates."
+          ]
+        }
+      ]
+    },
+    "contact": {
+      "title": "Let's Collaborate on Data-Driven Growth",
+      "description": "Open for strategic roles, consulting, and complex analytical challenges.",
+      "email": "abhisheksiddantj@gmail.com",
+      "linkedin": "https://in.linkedin.com/in/abhishek-siddant-jonnalagadda",
+      "no_form_rule": "NO form input fields. Direct links and click-to-copy email buttons only."
+    }
+  },
+  "instructions_to_main_agent": [
+    "Strictly follow the user choice details: Name is Abhishek Siddant (Jonnalagadda), Email: abhisheksiddantj@gmail.com, LinkedIn: https://in.linkedin.com/in/abhishek-siddant-jonnalagadda, 4 years experience.",
+    "Implement Lenis smooth scrolling or Framer Motion scroll listeners for smooth, luxurious site feel.",
+    "Ensure both 3D elements exist: 1) Interactive 3D Hero scene with mouse reactivity, 2) Dedicated 3D Interactive Data Viz canvas with rotatable 3D bars/nodes and dataset toggle buttons.",
+    "Ensure contact section has NO form, only direct interactive links for email and LinkedIn.",
+    "Add explicit data-testid attributes to all buttons, links, navigation items, canvas toggles, and key text metrics.",
+    "Avoid generic centered layouts or light backgrounds. Preserve the dark tactical obsidian aesthetic."
+  ]
+}
