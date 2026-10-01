@@ -14,6 +14,7 @@ Frontend-only React (CRA/craco). three + @react-three/fiber (no drei; OrbitContr
 - Tested: 100% frontend pass
 - 2026-06: All content replaced with real resume data (experience x4, 4 resume projects, skills, education, certs, achievements, phone/location, résumé download link); studio datasets themed to resume domains
 - 2026-06: Toned-down headings (hero "Data into decisions."), nav shows "Abhishek Siddant", removed Airflow/BiLSTM tags, generic skill notes; CSV upload in 3D Studio (client-side parse, ≤8×10, sample download)
+- 2026-06: About bio replaced with user-written text (no years of exp); project descriptions shortened
 
 ## Backlog
 - P1: Case-study detail pages; GitHub link (URL not provided)

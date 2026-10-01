@@ -30,12 +30,19 @@ export const About = () => (
           ]}
         />
         <Reveal delay={0.2} className="mt-10 grid gap-8 md:grid-cols-2">
-          <p className="text-base leading-relaxed text-zinc-300 md:text-lg">
-            I'm Abhishek, a Business & Strategy Analyst based in Hyderabad with 4+ years across insurance, healthcare and retail operations — and a Master's in Management Information Systems from Stevens Institute of Technology. I work on risk, segmentation, pricing and process: the questions where a good analysis changes what a company does on Monday.
+          <p data-testid="about-bio-1" className="text-base leading-relaxed text-zinc-300 md:text-lg">
+            I'm a Data & Strategy Business Analyst based in Hyderabad. My work sits at the intersection of data, business strategy, and technology, with a focus on turning complex business problems into clear insights and actionable decisions.
           </p>
-          <p className="text-base leading-relaxed text-zinc-400 md:text-lg">
-            Alongside my early BI work, I co-founded Warranty ME and took it into three markets — so I read data like an operator. My toolkit runs from SQL, Python and Azure to Power BI and Tableau, but the real output is clarity: a recommendation stakeholders can defend, measure and act on.
-          </p>
+          <div className="space-y-5 text-base leading-relaxed text-zinc-400 md:text-lg">
+            <p data-testid="about-bio-2">
+              I tend to work across the full decision loop:{" "}
+              <span className="font-medium text-[var(--signal)]">business problem → data → analysis → insight → strategy → execution → measurement.</span>{" "}
+              My work spans business intelligence, data analysis, process optimization, stakeholder requirements, KPI development, dashboarding, and translating business needs into data-driven solutions.
+            </p>
+            <p data-testid="about-bio-3">
+              I'm particularly interested in understanding not just what the data says, but why it matters, what should change, and how to measure the impact.
+            </p>
+          </div>
         </Reveal>
       </div>
     </div>
