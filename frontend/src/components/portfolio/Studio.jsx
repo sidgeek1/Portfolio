@@ -22,12 +22,12 @@ const Readout = ({ data, selected }) => {
 };
 
 export const Studio = () => {
-  const [key, setKey] = useState("risk");
+  const [key, setKey] = useState("finance");
   const [selected, setSelected] = useState(null);
   const [spin, setSpin] = useState(true);
   const [custom, setCustom] = useState(null);
   const sets = custom ? { ...DATASETS, custom } : DATASETS;
-  const data = sets[key] ?? DATASETS.risk;
+  const data = sets[key] ?? DATASETS.finance;
   const onData = (d) => { setCustom(d); setKey("custom"); setSelected(null); };
 
   const switchSet = (k) => { setKey(k); setSelected(null); };
@@ -81,6 +81,11 @@ export const Studio = () => {
           </div>
           <Readout data={data} selected={selected} />
           <p data-testid="studio-insight" className="break-words border-t hairline pt-6 font-serif-i text-2xl leading-snug text-zinc-200">"{data.insight}"</p>
+          {data.source && (
+            <a data-testid="studio-source-link" href={data.sourceUrl} target="_blank" rel="noopener noreferrer" className="-mt-6 font-mono text-[11px] uppercase leading-relaxed tracking-widest text-zinc-400 transition-colors hover:text-[var(--signal)]">
+              Source · {data.source} ↗
+            </a>
+          )}
         </aside>
       </Reveal>
       <Reveal>

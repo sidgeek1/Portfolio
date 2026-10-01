@@ -139,21 +139,30 @@ export const ACHIEVEMENTS = [
   "Judge, startup founder pitches — ICICSE (2019) & AI: Future of Machines (2018)",
 ];
 
-const Q = ["Q1", "Q2", "Q3", "Q4", "Q5", "Q6"];
 export const DATASETS = {
-  risk: {
-    label: "Claims Risk", unit: "score", cols: Q, rows: ["Individual", "Family", "Senior", "Group"],
-    values: [[42, 47, 51, 58, 63, 69], [38, 41, 46, 52, 57, 61], [55, 61, 66, 72, 79, 84], [30, 33, 37, 40, 44, 49]],
-    insight: "Senior plans carry the steepest risk climb — price and segment accordingly.",
+  finance: {
+    label: "Big Tech Revenue", unit: "$B", cols: ["2019", "2020", "2021", "2022", "2023", "2024"],
+    rows: ["Amazon", "Apple", "Alphabet", "Microsoft"],
+    values: [
+      [280.5, 386.1, 469.8, 514.0, 574.8, 638.0],
+      [260.2, 274.5, 365.8, 394.3, 383.3, 391.0],
+      [161.9, 182.5, 257.6, 282.8, 307.4, 350.0],
+      [125.8, 143.0, 168.1, 198.3, 211.9, 245.1],
+    ],
+    insight: "Amazon grew 2.3× since 2019, while Apple has been flat since 2022.",
+    source: "Company annual reports (10-K). Apple FY ends Sep, Microsoft FY ends Jun.",
+    sourceUrl: "https://www.sec.gov/edgar/search/",
   },
-  campaign: {
-    label: "Campaign ROI", unit: "%", cols: ["M1", "M2", "M3", "M4", "M5", "M6"], rows: ["Email", "Paid search", "Social", "Partners"],
-    values: [[8, 10, 12, 14, 16, 17], [6, 7, 9, 10, 12, 13], [4, 5, 7, 9, 11, 12], [9, 10, 11, 13, 15, 16]],
-    insight: "Re-prioritised KPIs drove a 17% lift in campaign ROI.",
-  },
-  inventory: {
-    label: "Inventory Flow", unit: "K evts", cols: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"], rows: ["Receiving", "Shelving", "Checkout", "Returns"],
-    values: [[120, 135, 128, 142, 160, 190], [95, 104, 99, 112, 128, 150], [210, 230, 225, 248, 290, 340], [22, 25, 24, 27, 33, 41]],
-    insight: "Real-time tracking across 1M+ daily events cut stockouts by 42%.",
+  health: {
+    label: "US Health Spending", unit: "$B", cols: ["2019", "2020", "2021", "2022", "2023"],
+    rows: ["Hospital care", "Physician & clinical", "Prescription drugs"],
+    values: [
+      [1267.6, 1334.0, 1376.7, 1419.1, 1519.7],
+      [814.1, 870.5, 910.4, 910.6, 978.0],
+      [351.0, 374.3, 403.6, 403.7, 449.7],
+    ],
+    insight: "Prescription drug spending grew fastest: +28% from 2019 to 2023.",
+    source: "CMS National Health Expenditure Accounts (2024 release).",
+    sourceUrl: "https://www.cms.gov/data-research/statistics-trends-and-reports/national-health-expenditure-data/historical",
   },
 };
