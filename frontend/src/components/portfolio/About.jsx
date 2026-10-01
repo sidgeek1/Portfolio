@@ -32,10 +32,10 @@ export const About = () => (
         />
         <Reveal delay={0.2} className="mt-10 grid gap-8 md:grid-cols-2">
           <p className="text-base leading-relaxed text-zinc-300 md:text-lg">
-            I'm Abhishek, a Data & Strategy Analyst with four years of experience across SaaS, e-commerce and fintech. I work on churn, unit economics, forecasting and growth — the questions where a good model changes what a company does on Monday.
+            I'm Abhishek, a Business & Strategy Analyst based in Hyderabad with 4+ years across insurance, healthcare and retail operations — and a Master's in Management Information Systems from Stevens Institute of Technology. I work on risk, segmentation, pricing and process: the questions where a good analysis changes what a company does on Monday.
           </p>
           <p className="text-base leading-relaxed text-zinc-400 md:text-lg">
-            My toolkit runs from SQL and Python to Tableau and Power BI, but the real output is clarity: a recommendation leadership can defend, measure and act on.
+            Alongside my early BI work, I co-founded Warranty ME and took it into three markets — so I read data like an operator. My toolkit runs from SQL, Python and Azure to Power BI and Tableau, but the real output is clarity: a recommendation stakeholders can defend, measure and act on.
           </p>
         </Reveal>
       </div>

@@ -1,5 +1,7 @@
 export const EMAIL = "abhisheksiddantj@gmail.com";
 export const LINKEDIN = "https://in.linkedin.com/in/abhishek-siddant-jonnalagadda";
+export const PHONE = "+91 784-269-8676";
+export const LOCATION = "Hyderabad, India";
 
 export const NAV = [
   { id: "about", label: "About" },
@@ -10,100 +12,148 @@ export const NAV = [
 ];
 
 export const STATS = [
-  { value: 4, suffix: "+", label: "Years in analytics" },
-  { value: 20, suffix: "+", label: "Strategy engagements" },
-  { value: 12, prefix: "$", suffix: "M", label: "Value surfaced" },
-  { value: 50, suffix: "+", label: "Execs on my dashboards" },
+  { value: 30, suffix: "M+", label: "Insurance records analysed" },
+  { value: 48, suffix: "%", label: "Risk-scoring accuracy gain" },
+  { value: 42, suffix: "%", label: "Fewer stockout incidents" },
+  { value: 29, suffix: "%", label: "Lead-to-customer lift" },
 ];
 
 export const MARQUEE = [
-  "SQL & BigQuery", "Python & Pandas", "Tableau & Power BI", "Strategic Forecasting",
-  "Cohort Analysis", "A/B Experimentation", "Unit Economics", "Financial Modeling",
+  "SQL & Python", "Power BI & Tableau", "Root-Cause Analysis", "Risk Scoring",
+  "KPI Dashboards", "Go-To-Market Strategy", "Azure Data Factory", "XGBoost & Scikit-learn",
 ];
 
 export const PILLARS = [
-  { n: "01", title: "Data-first decisions", text: "Every recommendation starts with a question worth answering and a dataset worth trusting." },
-  { n: "02", title: "Predictive over reactive", text: "Models that tell leadership what is about to happen, not just what already did." },
-  { n: "03", title: "Stories executives act on", text: "One chart, one sentence, one decision. Complexity stays in the appendix." },
+  { n: "01", title: "Data-first decisions", text: "Every recommendation starts with a question worth answering and a dataset worth trusting — 30M records or 30." },
+  { n: "02", title: "Root cause over symptoms", text: "Quantitative and root-cause analysis that finds the drivers of risk, cost and churn, not just the trend line." },
+  { n: "03", title: "Stories stakeholders act on", text: "Executive-ready dashboards and requirements that turn analysis into product, pricing and process decisions." },
 ];
 
 export const SKILLS = [
   {
-    key: "eng", span: "lg:col-span-7", title: "Data Engineering & Querying",
-    tags: ["Advanced SQL", "PostgreSQL", "Snowflake", "BigQuery", "dbt", "ETL Pipelines"],
-    note: "100M+ row datasets, tuned for sub-second dashboards.", level: 92,
+    key: "eng", span: "lg:col-span-7", title: "Languages & Data Engineering",
+    tags: ["Python", "SQL", "R", "DAX", "Azure Data Factory", "Databricks", "Apache Airflow"],
+    note: "Validated 1M+ daily events across 15K+ SKUs, cutting ingestion errors 35%.", level: 92,
   },
   {
-    key: "ml", span: "lg:col-span-5", title: "Statistics & Machine Learning",
-    tags: ["Python", "Pandas", "Scikit-Learn", "Regression", "Clustering", "Forecasting"],
-    note: "Churn & demand models shipped at 95%+ accuracy.", level: 86,
+    key: "ml", span: "lg:col-span-5", title: "Machine Learning & Analytics",
+    tags: ["Scikit-learn", "Pandas", "NumPy", "XGBoost", "BiLSTM", "NLP"],
+    note: "AI-enabled healthcare plan recommendations from questionnaires + history.", level: 86,
   },
   {
-    key: "bi", span: "lg:col-span-5", title: "BI & Data Storytelling",
-    tags: ["Tableau", "Power BI", "Looker", "Exec Reporting"],
-    note: "C-suite dashboards used weekly by 50+ leaders.", level: 94,
+    key: "bi", span: "lg:col-span-5", title: "BI & Visualisation",
+    tags: ["Power BI", "Tableau", "Looker Studio", "Excel (Advanced)"],
+    note: "KPI dashboards that cut reporting refresh time by 36%.", level: 94,
   },
   {
-    key: "strat", span: "lg:col-span-7", title: "Business & Strategy Frameworks",
-    tags: ["Cohort Analysis", "LTV / CAC", "Market Sizing", "A/B Testing", "Pricing", "Financial Modeling"],
-    note: "Found a $2.4M bottleneck hiding in an expansion funnel.", level: 90,
+    key: "strat", span: "lg:col-span-7", title: "Business & Strategy",
+    tags: ["Requirements & PDDs", "Root-Cause Analysis", "KPI Design", "Segmentation", "Pricing", "Go-To-Market"],
+    note: "Unlocked 3 markets and +29% conversions as a startup co-founder.", level: 90,
   },
 ];
 
+export const DATABASES = ["MS SQL Server", "MySQL", "PgAdmin"];
+
 export const PROJECTS = [
   {
-    id: "churn", no: "01", title: "Retention Engine", kicker: "Enterprise SaaS",
-    impact: "$1.8M", impactLabel: "ARR saved", metric: "−18.4% churn",
-    text: "A gradient-boosted churn model reading engagement telemetry across 40,000 enterprise seats, wired into CS playbooks so risk turned into action within a week.",
-    tech: ["Python", "SQL", "XGBoost", "Tableau"],
+    id: "risk", no: "01", title: "Insurance Risk Intelligence", kicker: "Helioinfotech · Insurance",
+    impact: "+48%", impactLabel: "risk-scoring accuracy", metric: "30M+ records · −36% refresh time",
+    text: "Analysed 30M+ insurance records to surface customer segments, claims trends, pricing patterns and risk drivers — then paired it with an AI-enabled healthcare plan recommender built in Scikit-learn.",
+    tech: ["SQL", "Python", "Scikit-learn", "Power BI"],
     image: "https://images.unsplash.com/photo-1757466762489-52fea38071ad?crop=entropy&cs=srgb&fm=jpg&q=85&w=1400",
   },
   {
-    id: "attr", no: "02", title: "Attribution Rewired", kicker: "E-commerce Growth",
-    impact: "+32%", impactLabel: "marketing ROI", metric: "$4.2M spend re-allocated",
-    text: "Replaced last-click with a Markov-chain multi-touch model across paid channels, then rebuilt the budget process around it.",
-    tech: ["BigQuery", "Python", "Looker", "Markov chains"],
+    id: "inventory", no: "02", title: "Real-Time Inventory System", kicker: "Red Hat (IBM) · Retail Ops",
+    impact: "−42%", impactLabel: "stockout incidents", metric: "1M+ daily events · −35% ingestion errors",
+    text: "Built a real-time inventory platform on Azure tracking every product from receiving to checkout across 15K+ SKUs, shipped to production in 8 weeks with a team of 4+ interns.",
+    tech: ["Azure", "Python", "SQL", "ETL"],
     image: "https://images.unsplash.com/photo-1762267683517-6e9bc20675e9?crop=entropy&cs=srgb&fm=jpg&q=85&w=1400",
   },
   {
-    id: "fin", no: "03", title: "Unit Economics Simulator", kicker: "Fintech Strategy",
-    impact: "10k", impactLabel: "scenarios / run", metric: "Adopted by the board",
-    text: "A Monte-Carlo forecasting tool that let leadership stress-test rate shifts and default risk before committing capital.",
-    tech: ["Python", "Monte Carlo", "Streamlit", "Power BI"],
+    id: "nba", no: "03", title: "NBA Game Intelligence", kicker: "Machine Learning",
+    impact: "+15%", impactLabel: "prediction accuracy", metric: "112 → 39 optimised predictors",
+    text: "An ML pipeline on Boston Celtics data comparing linear regression, random forest, XGBoost and BiLSTM — built as a framework ready for league-wide expansion.",
+    tech: ["Python", "XGBoost", "Random Forest", "BiLSTM"],
     image: "https://images.unsplash.com/photo-1641355262431-021a396d4fe5?crop=entropy&cs=srgb&fm=jpg&q=85&w=1400",
+  },
+  {
+    id: "sales", no: "04", title: "Market Sales Prediction", kicker: "Pricing Analytics",
+    impact: "85%", impactLabel: "model accuracy", metric: "25% peak-season turnover found",
+    text: "A Python pricing model validated through SQL workflows and enriched with NLP sentiment from customer reviews, delivered as Tableau dashboards for action.",
+    tech: ["Python", "SQL", "NLP", "Tableau"],
+    image: "https://images.unsplash.com/photo-1770486036751-e55247238964?crop=entropy&cs=srgb&fm=jpg&q=85&w=1400",
   },
 ];
 
 export const EXPERIENCE = [
   {
-    period: "2023 — Now", role: "Senior Data & Strategy Analyst", company: "Enterprise Technology",
-    points: ["Lead strategy analytics across $50M+ in annual transaction volume.", "Set the modelling standards and mentor a pod of junior analysts."],
+    period: "Sep 2024 — Now", role: "Business / Strategy Analyst", company: "Helioinfotech LLC · New Jersey, USA",
+    points: [
+      "Analysed 30M+ insurance records with SQL, Python and Power BI to uncover segments, claims trends, pricing patterns and risk drivers.",
+      "Built an AI-enabled healthcare plan recommendation framework with Scikit-learn.",
+      "Improved risk-scoring accuracy by 48% through quantitative and root-cause analysis.",
+      "Cut reporting refresh time by 36% with stakeholder-driven KPI dashboards.",
+    ],
   },
   {
-    period: "2022 — 2023", role: "Data Analyst, Growth Strategy", company: "Analytics & Insights Firm",
-    points: ["Ran 25+ A/B experiments, lifting signup conversion by 14%.", "Automated ETL feeding real-time executive Tableau suites."],
+    period: "Feb 2021 — Apr 2022", role: "Business Analyst", company: "Genzeon · Hyderabad, India",
+    points: [
+      "Led analysis of 20M+ customer records across 15+ healthcare data streams.",
+      "Ran current/future-state assessments and documented workflows through PDDs.",
+      "Defined KPIs and solution priorities contributing to a 17% lift in campaign ROI.",
+      "Delivered executive-ready Power BI and Tableau dashboards.",
+    ],
   },
   {
-    period: "2021 — 2022", role: "Business Analyst", company: "Consulting & Operations",
-    points: ["Built market-sizing and pricing models for new-region launches.", "Translated ops data into weekly KPI narratives for leadership."],
+    period: "Jan 2018 — Dec 2020", role: "Business Intelligence Engineer", company: "Red Hat (IBM) · Hyderabad, India",
+    points: [
+      "Built a real-time inventory management system on Azure, Python and SQL.",
+      "Validated 1M+ daily events across 15K+ SKUs — 35% fewer ingestion errors, 42% fewer stockouts.",
+      "Supervised 4+ interns and delivered to production within 8 weeks.",
+    ],
   },
+  {
+    period: "Nov 2017 — Dec 2020", role: "Co-Founder / Product Head", company: "Warranty ME · Hyderabad, India",
+    points: [
+      "Drove go-to-market, unlocking 3 markets and +29% lead-to-customer conversion in two quarters.",
+      "Secured funding and incubation at IIIT Hyderabad and T-Hub.",
+    ],
+  },
+];
+
+export const EDUCATION = [
+  { school: "Stevens Institute of Technology", place: "Hoboken, NJ, USA", degree: "Master's, Management Information Systems", period: "2022 — 2024", note: "Provost Master's Scholarship" },
+  { school: "Gurunanak Institute of Technology", place: "Hyderabad, India", degree: "B.Tech, Computer Science & Engineering", period: "2016 — 2020", note: "Specialisation: Software Development" },
+];
+
+export const CERTS = [
+  "Microsoft Certified: Power BI Data Analyst Associate (PL-300)",
+  "AWS Certified Cloud Practitioner (CLF-C02)",
+  "DataCamp: SQL Fundamentals",
+  "Red Hat: Architecture in Scalable Cloud Solutions",
+  "NASBA: Introduction to Artificial Intelligence",
+];
+
+export const ACHIEVEMENTS = [
+  "IEEE paper (2017) — Data Shadows: Navigating Privacy in a Hyper-connected World",
+  "Judge, startup founder pitches — ICICSE (2019) & AI: Future of Machines (2018)",
 ];
 
 const Q = ["Q1", "Q2", "Q3", "Q4", "Q5", "Q6"];
 export const DATASETS = {
-  revenue: {
-    label: "Revenue Yield", unit: "$M", cols: Q, rows: ["North America", "Europe", "APAC", "LATAM"],
-    values: [[4.2, 4.8, 5.1, 5.9, 6.4, 7.2], [3.1, 3.4, 3.3, 3.9, 4.4, 4.9], [1.8, 2.4, 3.2, 3.9, 4.8, 5.6], [0.9, 1.1, 1.4, 1.6, 2.1, 2.5]],
-    insight: "APAC compounds fastest: 3.1× in six quarters.",
+  risk: {
+    label: "Claims Risk", unit: "score", cols: Q, rows: ["Individual", "Family", "Senior", "Group"],
+    values: [[42, 47, 51, 58, 63, 69], [38, 41, 46, 52, 57, 61], [55, 61, 66, 72, 79, 84], [30, 33, 37, 40, 44, 49]],
+    insight: "Senior plans carry the steepest risk climb — price and segment accordingly.",
   },
-  churn: {
-    label: "Cohort Churn", unit: "%", cols: ["M1", "M2", "M3", "M4", "M5", "M6"], rows: ["Jan cohort", "Feb cohort", "Mar cohort", "Apr cohort"],
-    values: [[8.1, 6.4, 5.2, 4.6, 4.1, 3.9], [7.4, 5.9, 4.7, 4.0, 3.6, 3.2], [6.2, 4.8, 3.9, 3.3, 2.9, 2.6], [5.1, 3.9, 3.1, 2.7, 2.3, 2.0]],
-    insight: "Onboarding redesign cut month-one churn by 37%.",
+  campaign: {
+    label: "Campaign ROI", unit: "%", cols: ["M1", "M2", "M3", "M4", "M5", "M6"], rows: ["Email", "Paid search", "Social", "Partners"],
+    values: [[8, 10, 12, 14, 16, 17], [6, 7, 9, 10, 12, 13], [4, 5, 7, 9, 11, 12], [9, 10, 11, 13, 15, 16]],
+    insight: "Re-prioritised KPIs drove a 17% lift in campaign ROI.",
   },
-  supply: {
-    label: "Supply Efficiency", unit: "idx", cols: Q, rows: ["Sourcing", "Warehousing", "Last mile", "Returns"],
-    values: [[62, 66, 71, 74, 78, 81], [55, 58, 64, 69, 72, 77], [48, 52, 57, 63, 70, 76], [40, 44, 47, 53, 58, 64]],
-    insight: "Last-mile routing gave the biggest efficiency jump.",
+  inventory: {
+    label: "Inventory Flow", unit: "K evts", cols: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"], rows: ["Receiving", "Shelving", "Checkout", "Returns"],
+    values: [[120, 135, 128, 142, 160, 190], [95, 104, 99, 112, 128, 150], [210, 230, 225, 248, 290, 340], [22, 25, 24, 27, 33, 41]],
+    insight: "Real-time tracking across 1M+ daily events cut stockouts by 42%.",
   },
 };

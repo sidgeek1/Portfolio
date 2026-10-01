@@ -12,7 +12,8 @@ Frontend-only React (CRA/craco). three + @react-three/fiber (no drei; OrbitContr
 - Hero: instanced 3D data-bar field reacting to cursor (raycast bump, camera parallax, idle wander), masked line reveal, hero-only custom cursor, scroll parallax
 - Slow editorial marquee, About w/ counters + pillars, bento Toolkit, 3D Data Studio (3 datasets, orbit/zoom, click-bar readout, autorotate toggle), clipped-frame case studies with parallax, experience list, contact (mailto, copy, LinkedIn)
 - Tested: 100% frontend pass
+- 2026-06: All content replaced with real resume data (experience x4, 4 resume projects, skills, education, certs, achievements, phone/location, résumé download link); studio datasets themed to resume domains
 
 ## Backlog
-- P1: Replace placeholder companies/metrics with real data; resume PDF download
+- P1: Case-study detail pages; GitHub link (URL not provided)
 - P2: Case-study detail pages; light-weight WebGL fallback image for low-end devices

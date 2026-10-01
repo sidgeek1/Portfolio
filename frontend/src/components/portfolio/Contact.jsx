@@ -3,7 +3,9 @@ import { toast } from "sonner";
 import { Copy, Linkedin, Mail, ArrowUp } from "lucide-react";
 import { MaskLines, Reveal } from "./Motion";
 import { Logo } from "./Logo";
-import { EMAIL, LINKEDIN } from "./data";
+import { EMAIL, LINKEDIN, PHONE, LOCATION } from "./data";
+
+const RESUME = "https://customer-assets-wrfwihn1.emergentagent.net/job_data-strategy-3d/artifacts/6vx5jepo_Siddant%20_Abhishek%20_BA_Resume%20.pdf";
 import { scrollToId } from "./scroll";
 
 export const Contact = () => {
@@ -62,6 +64,12 @@ export const Contact = () => {
             </div>
             <span className="font-display text-3xl transition-transform duration-500 group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:text-[var(--signal)]">↗</span>
           </motion.a>
+        </Reveal>
+
+        <Reveal className="mt-6 flex flex-wrap items-center gap-x-8 gap-y-4 font-mono text-xs uppercase tracking-[0.2em] text-zinc-400">
+          <a data-testid="contact-resume-link" href={RESUME} target="_blank" rel="noopener noreferrer" className="rounded-full border border-[var(--signal)]/50 px-5 py-3 text-[var(--signal)] transition-colors hover:bg-[var(--signal)] hover:text-[#08090a]">Download résumé ↓</a>
+          <a data-testid="contact-phone-link" href={`tel:${PHONE.replace(/[^+\d]/g, "")}`} className="transition-colors hover:text-[var(--bone)]">{PHONE}</a>
+          <span>{LOCATION}</span>
         </Reveal>
 
         <footer className="mt-28 flex flex-col items-start justify-between gap-6 border-t hairline pt-8 md:flex-row md:items-center">

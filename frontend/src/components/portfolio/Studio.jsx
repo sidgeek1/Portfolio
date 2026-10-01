@@ -21,7 +21,7 @@ const Readout = ({ data, selected }) => {
 };
 
 export const Studio = () => {
-  const [key, setKey] = useState("revenue");
+  const [key, setKey] = useState("risk");
   const [selected, setSelected] = useState(null);
   const [spin, setSpin] = useState(true);
   const data = DATASETS[key];

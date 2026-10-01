@@ -54,7 +54,9 @@ export const Hero = () => {
           <span className="h-2 w-2 animate-pulse rounded-full bg-[var(--signal)]" />
           <span data-testid="hero-name">Abhishek Siddant Jonnalagadda</span>
           <span className="text-zinc-500">/</span>
-          <span>Data & Strategy Analyst</span>
+          <span>Business & Strategy Analyst</span>
+          <span className="hidden text-zinc-500 sm:inline">/</span>
+          <span className="hidden sm:inline">Hyderabad, IN</span>
         </motion.div>
 
         <MaskLines
@@ -77,7 +79,7 @@ export const Hero = () => {
             data-testid="hero-tagline"
             className="max-w-md text-base leading-relaxed text-zinc-300 md:col-span-5 md:text-lg"
           >
-            Four years turning messy, high-dimensional data into the one decision a leadership team needs to make next.
+            4+ years turning 30M-record datasets into the one decision a leadership team needs to make next — across insurance, healthcare and retail.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
