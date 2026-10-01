@@ -34,7 +34,7 @@ export const Hero = () => {
   };
 
   return (
-    <section id="top" ref={ref} onPointerMove={onMove} data-testid="hero-section" className="relative h-[100svh] min-h-[640px] overflow-hidden md:cursor-none">
+    <section id="top" ref={ref} onPointerMove={onMove} data-testid="hero-section" className="relative h-[100svh] min-h-[720px] overflow-hidden md:cursor-none">
       <motion.div style={{ y: sceneY }} className="absolute inset-0" data-testid="hero-3d-canvas">
         <Suspense fallback={null}>
           <HeroScene />
@@ -69,21 +69,22 @@ export const Hero = () => {
           ]}
         />
 
-        <div className="mt-10 grid gap-8 md:grid-cols-12 md:items-end">
-          <motion.p
+        <div className="mt-8 grid gap-6 md:mt-10 md:grid-cols-12 md:items-end md:gap-8">
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7, duration: 1, ease: EASE }}
             data-testid="hero-tagline"
-            className="max-w-md text-base leading-relaxed text-zinc-300 md:col-span-5 md:text-lg"
+            className="max-w-2xl space-y-3 text-sm leading-relaxed text-zinc-300 md:col-span-7 md:text-base"
           >
-            4+ years turning 30M-record datasets into the one decision a leadership team needs to make next — across insurance, healthcare and retail.
-          </motion.p>
+            <p>I work across data analysis, business strategy, process improvement, and decision support — turning business questions into data-driven insights and actionable solutions.</p>
+            <p className="text-zinc-400">I'm most interested in the layer between data and a real business decision: understanding the problem, finding the right evidence, identifying what the numbers mean, and translating insights into action.</p>
+          </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.85, duration: 1, ease: EASE }}
-            className="pointer-events-auto flex flex-wrap gap-3 md:col-span-7 md:justify-end"
+            className="pointer-events-auto flex flex-wrap gap-3 md:col-span-5 md:justify-end"
           >
             <button data-testid="hero-cta-studio" onClick={() => scrollToId("studio")} className="group flex items-center gap-2 rounded-full bg-[var(--bone)] px-6 py-3.5 text-sm font-semibold text-[#08090a] transition-transform duration-300 hover:scale-[1.03]">
               Enter the 3D studio

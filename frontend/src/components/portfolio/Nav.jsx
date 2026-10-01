@@ -15,7 +15,7 @@ export const Nav = () => {
       initial={{ y: -40, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 1, ease: EASE, delay: 0.9 }}
-      className="fixed inset-x-0 top-0 z-50 px-4 pt-4 md:px-8"
+      className="absolute inset-x-0 top-0 z-50 px-4 pt-4 md:px-8"
     >
       <nav className="mx-auto flex max-w-[1400px] items-center justify-between rounded-full border hairline bg-[#08090a]/60 py-2 pl-3 pr-2 backdrop-blur-xl">
         <button data-testid="nav-logo" onClick={() => go("top")} className="flex items-center gap-3">

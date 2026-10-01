@@ -24,7 +24,7 @@ export const MARQUEE = [
 ];
 
 export const PILLARS = [
-  { n: "01", title: "Data-first decisions", text: "Every recommendation starts with a question worth answering and a dataset worth trusting — 30M records or 30." },
+  { n: "01", title: "Data-first decisions", text: "Every recommendation starts with a question worth answering and a dataset worth trusting — 100M records or 10." },
   { n: "02", title: "Root cause over symptoms", text: "Quantitative and root-cause analysis that finds the drivers of risk, cost and churn, not just the trend line." },
   { n: "03", title: "Stories stakeholders act on", text: "Executive-ready dashboards and requirements that turn analysis into product, pricing and process decisions." },
 ];
