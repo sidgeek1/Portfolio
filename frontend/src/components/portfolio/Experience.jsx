@@ -42,7 +42,7 @@ export const Experience = () => (
         <SectionLabel no="05">Experience</SectionLabel>
         <MaskLines
           className="mt-8 font-display text-4xl font-medium leading-[1] tracking-[-0.035em] sm:text-5xl lg:text-6xl"
-          lines={["Operator first,", <span key="2" className="font-serif-i text-zinc-400">analyst always.</span>]}
+          lines={["Where I've", <span key="2" className="font-serif-i text-zinc-400">worked.</span>]}
         />
       </div>
       <ol className="lg:col-span-8">

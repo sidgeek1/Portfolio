@@ -20,9 +20,7 @@ export const Nav = () => {
       <nav className="mx-auto flex max-w-[1400px] items-center justify-between rounded-full border hairline bg-[#08090a]/60 py-2 pl-3 pr-2 backdrop-blur-xl">
         <button data-testid="nav-logo" onClick={() => go("top")} className="flex items-center gap-3">
           <Logo />
-          <span className="font-display text-sm font-semibold tracking-tight">
-            Siddant<span className="text-[var(--signal)]">/</span>Signal
-          </span>
+          <span className="font-display text-sm font-semibold tracking-tight">Abhishek Siddant</span>
         </button>
         <ul className="hidden items-center gap-1 md:flex">
           {NAV.map((n) => (

@@ -3,11 +3,12 @@ import { motion } from "framer-motion";
 import { Move3d, Pause, Play } from "lucide-react";
 import { Reveal, MaskLines, SectionLabel, EASE } from "./Motion";
 import { DATASETS } from "./data";
+import { CsvUpload } from "./CsvUpload";
 
 const StudioScene = lazy(() => import("./StudioScene"));
 
 const Readout = ({ data, selected }) => {
-  const [r, c] = (selected ?? "0-5").split("-").map(Number);
+  const [r, c] = (selected ?? `0-${data.cols.length - 1}`).split("-").map(Number);
   const v = data.values[r]?.[c] ?? 0;
   return (
     <motion.div key={`${data.label}-${selected}`} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, ease: EASE }}>
@@ -24,7 +25,10 @@ export const Studio = () => {
   const [key, setKey] = useState("risk");
   const [selected, setSelected] = useState(null);
   const [spin, setSpin] = useState(true);
-  const data = DATASETS[key];
+  const [custom, setCustom] = useState(null);
+  const sets = custom ? { ...DATASETS, custom } : DATASETS;
+  const data = sets[key] ?? DATASETS.risk;
+  const onData = (d) => { setCustom(d); setKey("custom"); setSelected(null); };
 
   const switchSet = (k) => { setKey(k); setSelected(null); };
 
@@ -34,10 +38,10 @@ export const Studio = () => {
       <div className="mt-8 flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
         <MaskLines
           className="font-display text-4xl font-medium leading-[1] tracking-[-0.035em] sm:text-5xl lg:text-6xl"
-          lines={["Don't read the data.", <span key="2">Walk <span className="font-serif-i text-[var(--signal)]">around</span> it.</span>]}
+          lines={["Explore the data", <span key="2">in <span className="font-serif-i text-[var(--signal)]">3D.</span></span>]}
         />
         <Reveal className="flex flex-wrap gap-2">
-          {Object.entries(DATASETS).map(([k, d]) => (
+          {Object.entries(sets).map(([k, d]) => (
             <button
               key={k}
               data-testid={`studio-dataset-${k}`}
@@ -50,7 +54,7 @@ export const Studio = () => {
         </Reveal>
       </div>
 
-      <Reveal className="mt-12 grid overflow-hidden rounded-3xl border hairline lg:grid-cols-12">
+      <Reveal className="mt-12 grid grid-cols-1 overflow-hidden rounded-3xl border hairline lg:grid-cols-12">
         <div data-lenis-prevent data-testid="studio-3d-canvas" className="relative h-[440px] md:h-[600px] lg:col-span-8">
           <Suspense fallback={<div className="grid h-full place-items-center font-mono text-xs text-zinc-400">Loading scene…</div>}>
             <StudioScene data={data} selected={selected} onSelect={setSelected} autoRotate={spin} />
@@ -66,7 +70,7 @@ export const Studio = () => {
             {spin ? <Pause className="h-3.5 w-3.5" /> : <Play className="h-3.5 w-3.5" />} {spin ? "Pause orbit" : "Auto orbit"}
           </button>
         </div>
-        <aside className="flex flex-col justify-between gap-10 border-t hairline bg-[#0f1112] p-7 md:p-9 lg:col-span-4 lg:border-l lg:border-t-0">
+        <aside className="flex min-w-0 flex-col justify-between gap-10 border-t hairline bg-[#0f1112] p-7 md:p-9 lg:col-span-4 lg:border-l lg:border-t-0">
           <div>
             <div className="font-mono text-xs uppercase tracking-[0.2em] text-zinc-400">Dataset</div>
             <div data-testid="studio-dataset-title" className="mt-2 font-display text-3xl font-medium tracking-tight">{data.label}</div>
@@ -76,8 +80,11 @@ export const Studio = () => {
             </div>
           </div>
           <Readout data={data} selected={selected} />
-          <p data-testid="studio-insight" className="border-t hairline pt-6 font-serif-i text-2xl leading-snug text-zinc-200">"{data.insight}"</p>
+          <p data-testid="studio-insight" className="break-words border-t hairline pt-6 font-serif-i text-2xl leading-snug text-zinc-200">"{data.insight}"</p>
         </aside>
+      </Reveal>
+      <Reveal>
+        <CsvUpload onData={onData} />
       </Reveal>
     </section>
   );

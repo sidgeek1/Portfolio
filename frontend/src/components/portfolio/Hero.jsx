@@ -64,10 +64,8 @@ export const Hero = () => {
           testId="hero-title"
           className="font-display text-[15vw] font-semibold leading-[0.86] tracking-[-0.05em] sm:text-[12vw] lg:text-[10.5vw] xl:text-[9.5rem]"
           lines={[
-            "Signal,",
-            <span key="b">
-              <span className="font-serif-i font-normal tracking-[-0.02em] text-[var(--signal)]">not</span> noise.
-            </span>,
+            "Data into",
+            <span key="b" className="font-serif-i font-normal tracking-[-0.02em] text-[var(--signal)]">decisions.</span>,
           ]}
         />
 

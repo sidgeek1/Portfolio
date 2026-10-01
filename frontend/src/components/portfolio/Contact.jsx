@@ -27,7 +27,7 @@ export const Contact = () => {
         </div>
         <MaskLines
           className="mt-8 font-display text-[16vw] font-semibold leading-[0.85] tracking-[-0.06em] lg:text-[12rem]"
-          lines={["Let's find", <span key="2">the <span className="font-serif-i font-normal text-[var(--signal)]">signal.</span></span>]}
+          lines={["Let's work", <span key="2"><span className="font-serif-i font-normal text-[var(--signal)]">together.</span></span>]}
         />
 
         <Reveal className="mt-16 grid gap-4 md:grid-cols-12">

@@ -32,23 +32,23 @@ export const PILLARS = [
 export const SKILLS = [
   {
     key: "eng", span: "lg:col-span-7", title: "Languages & Data Engineering",
-    tags: ["Python", "SQL", "R", "DAX", "Azure Data Factory", "Databricks", "Apache Airflow"],
-    note: "Validated 1M+ daily events across 15K+ SKUs, cutting ingestion errors 35%.", level: 92,
+    tags: ["Python", "SQL", "R", "DAX", "Azure Data Factory", "Databricks"],
+    note: "Clean, validated pipelines that keep data reliable from source to report.", level: 92,
   },
   {
     key: "ml", span: "lg:col-span-5", title: "Machine Learning & Analytics",
-    tags: ["Scikit-learn", "Pandas", "NumPy", "XGBoost", "BiLSTM", "NLP"],
-    note: "AI-enabled healthcare plan recommendations from questionnaires + history.", level: 86,
+    tags: ["Scikit-learn", "Pandas", "NumPy", "XGBoost", "NLP"],
+    note: "Predictive models that turn historical data into practical recommendations.", level: 86,
   },
   {
     key: "bi", span: "lg:col-span-5", title: "BI & Visualisation",
     tags: ["Power BI", "Tableau", "Looker Studio", "Excel (Advanced)"],
-    note: "KPI dashboards that cut reporting refresh time by 36%.", level: 94,
+    note: "Clear, executive-ready dashboards that make performance easy to track.", level: 94,
   },
   {
     key: "strat", span: "lg:col-span-7", title: "Business & Strategy",
     tags: ["Requirements & PDDs", "Root-Cause Analysis", "KPI Design", "Segmentation", "Pricing", "Go-To-Market"],
-    note: "Unlocked 3 markets and +29% conversions as a startup co-founder.", level: 90,
+    note: "Translating business questions into analysis, requirements and action.", level: 90,
   },
 ];
 

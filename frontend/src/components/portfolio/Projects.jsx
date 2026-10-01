@@ -62,7 +62,7 @@ export const Projects = () => (
     <SectionLabel no="04">Selected work</SectionLabel>
     <MaskLines
       className="mt-8 mb-16 font-display text-4xl font-medium leading-[1] tracking-[-0.035em] sm:text-5xl lg:text-6xl"
-      lines={["Case studies, measured", <span key="2">in <span className="font-serif-i text-[var(--signal)]">outcomes.</span></span>]}
+      lines={["Selected projects", <span key="2">and <span className="font-serif-i text-[var(--signal)]">results.</span></span>]}
     />
     {PROJECTS.map((p, i) => <Project key={p.id} p={p} i={i} />)}
   </section>

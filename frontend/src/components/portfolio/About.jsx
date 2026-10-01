@@ -25,9 +25,8 @@ export const About = () => (
         <MaskLines
           className="font-display text-4xl font-medium leading-[1.02] tracking-[-0.035em] sm:text-5xl lg:text-6xl"
           lines={[
-            "I sit between the data",
-            <span key="2">pipeline and the <span className="font-serif-i text-[var(--signal)]">boardroom</span> —</span>,
-            "and make them speak.",
+            "I turn raw data into",
+            <span key="2">decisions teams can <span className="font-serif-i text-[var(--signal)]">act on.</span></span>,
           ]}
         />
         <Reveal delay={0.2} className="mt-10 grid gap-8 md:grid-cols-2">

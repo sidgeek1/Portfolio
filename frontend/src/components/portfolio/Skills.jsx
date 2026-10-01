@@ -65,7 +65,7 @@ export const Skills = () => (
         <SectionLabel no="02">Toolkit</SectionLabel>
         <MaskLines
           className="mt-8 font-display text-4xl font-medium leading-[1] tracking-[-0.035em] sm:text-5xl lg:text-6xl"
-          lines={["Instruments of", <span key="2" className="font-serif-i text-zinc-400">precision.</span>]}
+          lines={["Tools I work", <span key="2" className="font-serif-i text-zinc-400">with every day.</span>]}
         />
       </div>
       <Reveal className="max-w-sm text-sm text-zinc-400 md:text-base">
