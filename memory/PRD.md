@@ -13,6 +13,7 @@ Frontend-only React (CRA/craco). three + @react-three/fiber (no drei; OrbitContr
 - Slow editorial marquee, About w/ counters + pillars, bento Toolkit, 3D Data Studio (3 datasets, orbit/zoom, click-bar readout, autorotate toggle), clipped-frame case studies with parallax, experience list, contact (mailto, copy, LinkedIn)
 - Tested: 100% frontend pass
 - 2026-06: All content replaced with real resume data (experience x4, 4 resume projects, skills, education, certs, achievements, phone/location, résumé download link); studio datasets themed to resume domains
+- 2026-06: Toned-down headings (hero "Data into decisions."), nav shows "Abhishek Siddant", removed Airflow/BiLSTM tags, generic skill notes; CSV upload in 3D Studio (client-side parse, ≤8×10, sample download)
 
 ## Backlog
 - P1: Case-study detail pages; GitHub link (URL not provided)
