@@ -56,7 +56,7 @@ export const Nav = () => {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
-            className="mx-auto mt-2 rounded-3xl border hairline bg-[#0f1112]/95 p-4 backdrop-blur-xl md:hidden"
+            className="mx-auto mb-4 mt-1 rounded-3xl border hairline bg-[#0f1112]/95 p-4 backdrop-blur-xl md:hidden"
           >
             {[...NAV, { id: "contact", label: "Contact" }].map((n) => (
               <button key={n.id} data-testid={`mobile-link-${n.id}`} onClick={() => go(n.id)} className="block w-full border-b hairline py-4 text-left font-display text-2xl last:border-0">

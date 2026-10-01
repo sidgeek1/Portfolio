@@ -16,6 +16,7 @@ Frontend-only React (CRA/craco). three + @react-three/fiber (no drei; OrbitContr
 - 2026-06: Toned-down headings (hero "Data into decisions."), nav shows "Abhishek Siddant", removed Airflow/BiLSTM tags, generic skill notes; CSV upload in 3D Studio (client-side parse, ≤8×10, sample download)
 - 2026-06: About bio replaced with user-written text (no years of exp); project descriptions shortened
 - 2026-06: 3D Studio now uses real public data: Big Tech revenue 2019–2024 (10-K) and US health spending 2019–2023 (CMS NHE), with source links
+- 2026-06: New hero intro text; pillar copy edit; nav is a fixed solid bar (content no longer shows through), anchor offset -72; added "Growth & GTM" Toolkit card
 
 ## Backlog
 - P1: Case-study detail pages; GitHub link (URL not provided)

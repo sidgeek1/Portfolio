@@ -69,7 +69,7 @@ export const Skills = () => (
         />
       </div>
       <Reveal className="max-w-sm text-sm text-zinc-400 md:text-base">
-        Four disciplines, one workflow — from raw query and ETL to the dashboard that wins the room. Databases: MS SQL Server, MySQL, PgAdmin.
+        Five disciplines, one workflow — from raw query and ETL to the dashboard that wins the room. Databases: MS SQL Server, MySQL, PgAdmin.
       </Reveal>
     </div>
     <div className="grid grid-cols-12 gap-4 md:gap-5">
