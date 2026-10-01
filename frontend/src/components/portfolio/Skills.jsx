@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
-import { Database, BrainCircuit, PresentationIcon, Compass } from "lucide-react";
+import { Database, BrainCircuit, PresentationIcon, Compass, TrendingUp } from "lucide-react";
 import { Reveal, MaskLines, SectionLabel, EASE } from "./Motion";
 import { SKILLS } from "./data";
 
-const ICONS = { eng: Database, ml: BrainCircuit, bi: PresentationIcon, strat: Compass };
+const ICONS = { eng: Database, ml: BrainCircuit, bi: PresentationIcon, strat: Compass, growth: TrendingUp };
 
 const Meter = ({ level }) => (
   <div className="flex items-end gap-1" aria-hidden="true">

@@ -47,8 +47,13 @@ export const SKILLS = [
   },
   {
     key: "strat", span: "lg:col-span-7", title: "Business & Strategy",
-    tags: ["Requirements & PDDs", "Root-Cause Analysis", "KPI Design", "Segmentation", "Pricing", "Go-To-Market"],
+    tags: ["Requirements & PDDs", "Root-Cause Analysis", "KPI Design", "Segmentation", "Process Improvement"],
     note: "Translating business questions into analysis, requirements and action.", level: 90,
+  },
+  {
+    key: "growth", span: "lg:col-span-12", title: "Growth & GTM",
+    tags: ["Go-To-Market Strategy", "Market Expansion", "Funnel & Conversion Analysis", "Customer Acquisition", "Pricing", "Product-Market Fit", "Campaign Analytics"],
+    note: "Finding where growth comes from and building the plan to capture it.", level: 88,
   },
 ];
 
